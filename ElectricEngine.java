@@ -10,8 +10,11 @@ public class ElectricEngine extends Engine{
     }
 
     public void showSpecs(){
-        System.out.printf("Current Type: '%-20s' %n", currentType);
-        System.out.printf("Voltage: '%-20s' %n", voltage);
+        if(!this.getClass().getName().equals("HybridEngine")){
+            super.showSpecs();
+        }
+        System.out.printf("Current Type: %20s %n", currentType);
+        System.out.printf("Voltage: %20s %n", voltage);
     }
     
 }

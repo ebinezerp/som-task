@@ -14,10 +14,12 @@ public class InternalCombusionEngine extends Engine{
 
 
     public void showSpecs(){
-        super.showSpecs();
-        System.out.printf("Displacement: '%-15s' %n", displacement);
-        System.out.printf("No Of Cylinders: '%-20s' %n", noOfCylinders);
-        System.out.printf("Comp Ratio: '%-20s' %n", compRatio);
+        if(!this.getClass().getName().equals("HybridEngine")){
+            super.showSpecs();
+        }
+        System.out.printf("Displacement: %15s %n", displacement);
+        System.out.printf("No Of Cylinders: %15s %n", noOfCylinders);
+        System.out.printf("Comp Ratio: %20s %n", compRatio);
     }
     
 }
