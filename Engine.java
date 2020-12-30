@@ -19,12 +19,12 @@ public abstract class Engine{
 
 
     public void showSpecs(){
-        System.out.printf("Engine Type '%-20s' :%n", engineType);
-        System.out.printf("Engine Power Source '%-12s' : %n", powerSource);
-        System.out.printf("Model Number '%-18s' : %n", model);
+        System.out.printf("Engine Type: '%-20s'%n", engineType);
+        System.out.printf("Engine Power Source: '%-12s' %n", powerSource);
+        System.out.printf("Model Number: '%-18s' %n", model);
         System.out.println("Key Specifications");
-        System.out.printf("Max Power '%-21s' : %n", maxPower);
-        System.out.printf("Max Torque '%-20s' : %n", maxTorque);
-        System.out.printf("Weight '%-25s' : %n", weight);
+        System.out.printf("Max Power: '%-21s' %n", maxPower);
+        System.out.printf("Max Torque: '%-20s' %n", maxTorque);
+        System.out.printf("Weight:'%-25s' %n", weight);
     }
 }
